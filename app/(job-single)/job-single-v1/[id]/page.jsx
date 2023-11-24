@@ -17,7 +17,7 @@ import Image from "next/image";
 
 async function getJob(id){
   let response = []
-  await fetch('http://127.0.0.1:8000/api/job/' + id, { next: { revalidate: 0 } })
+  await fetch('http://185.146.1.93:81/api/job/' + id, { next: { revalidate: 0 } })
       .then(response => {
         return response.json()
       })
@@ -61,7 +61,7 @@ const JobSingleDynamicV1 = async ({params}) => {
                     <Image
                         width={100}
                         height={98}
-                        src={"http://127.0.0.1:8000/media/" + job.fields.image}
+                        src={"http://185.146.1.93:81/media/" + job.fields.image}
                         alt="logo"
                     />
                   </span>
@@ -211,7 +211,7 @@ const JobSingleDynamicV1 = async ({params}) => {
                             <Image
                                 width={54}
                                 height={53}
-                                src={"http://127.0.0.1:8000/media/" + job.fields.image}
+                                src={"http://185.146.1.93:81/media/" + job.fields.image}
                                 alt="resource"
                             />
                           </div>
