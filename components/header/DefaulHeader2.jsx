@@ -52,12 +52,13 @@ const DefaulHeader2 = () => {
               <div className="logo">
                 <Link href="/">
                   <Image
-                      width={154}
+                      width={120}
                       height={50}
-                      src="/images/logo.svg"
+                      src="/images/logo.png"
                       alt="brand"
                   />
                 </Link>
+                SkillSwap
               </div>
             </div>
             {/* End .logo-box */}

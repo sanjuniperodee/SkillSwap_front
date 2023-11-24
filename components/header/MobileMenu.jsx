@@ -14,12 +14,13 @@ const MobileMenu = () => {
               <div className="logo">
                 <Link href="/">
                   <Image
-                    width={154}
-                    height={50}
-                    src="/images/logo.svg"
+                    width={50}
+                    height={200}
+                    src="/images/logo.png"
                     alt="brand"
                   />
                 </Link>
+                SkillSwap
               </div>
             </div>
             {/* End .logo-box */}
