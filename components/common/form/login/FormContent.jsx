@@ -14,7 +14,7 @@ const FormContent = () => {
   const handleLogin = async(e) => {
     e.preventDefault()
     let flag = false
-    fetch('http://127.0.0.1:8000/api/login', {
+    fetch('http://185.146.1.93:81/api/login', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',

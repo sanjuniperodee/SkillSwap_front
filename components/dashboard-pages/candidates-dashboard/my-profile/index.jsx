@@ -12,7 +12,7 @@ import MenuToggler from "../../MenuToggler";
 
 async function getUser(){
     let response = -1
-    await fetch('http://127.0.0.1:8000/api/user', { next: { revalidate: 0 },
+    await fetch('http://185.146.1.93:81/api/user', { next: { revalidate: 0 },
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

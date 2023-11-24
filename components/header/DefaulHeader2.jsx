@@ -20,7 +20,7 @@ const DefaulHeader2 = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
-    fetch('http://127.0.0.1:8000/api/user', { next: { revalidate: 3600 },
+    fetch('http://185.146.1.93:81/api/user', { next: { revalidate: 3600 },
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
