@@ -14,7 +14,7 @@ const MobileMenu = () => {
               <div className="logo">
                 <Link href="/">
                   <Image
-                    width={50}
+                    width={51}
                     height={200}
                     src="/images/logo.png"
                     alt="brand"
