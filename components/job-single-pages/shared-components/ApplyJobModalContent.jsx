@@ -4,7 +4,7 @@ import {useEffect} from "react";
 
 async function getUser(){
   let response = -1
-  await fetch('http://127.0.0.1:8000/api/user', { next: { revalidate: 0 },
+  await fetch('http://185.146.1.93:81/api/user', { next: { revalidate: 0 },
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -27,7 +27,7 @@ const ApplyJobModalContent = (props) => {
     if (user == -1) {
       alert('GOODBYE')
     } else {
-      fetch('http://127.0.0.1:8000/api/enroll/' + user.id + "/" + props.id, {
+      fetch('http://185.146.1.93:81/api/enroll/' + user.id + "/" + props.id, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
