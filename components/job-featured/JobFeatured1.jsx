@@ -5,7 +5,7 @@ import Image from "next/image";
 
 async function getJobs(){
     let response = []
-    await fetch('https://hi-test.kz//api/jobs', { next: { revalidate: 0 } })
+    await fetch('https://hi-test.kz/api/jobs', { next: { revalidate: 0 } })
         .then(response => {
             return response.json()
         })
@@ -28,7 +28,7 @@ export default async function JobFeatured1() {
                 <Image
                     width={50}
                     height={49}
-                    src={"https://hi-test.kz//media/" + item.fields.image}
+                    src={"https://hi-test.kz/media/" + item.fields.image}
                     alt="item brand"
                 />
               </span>

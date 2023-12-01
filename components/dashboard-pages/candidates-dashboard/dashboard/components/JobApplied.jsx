@@ -3,7 +3,7 @@ import Image from "next/image";
 
 async function getJobs(){
   let response = []
-  await fetch('https://hi-test.kz//api/jobs', { next: { revalidate: 3600 } })
+  await fetch('https://hi-test.kz/api/jobs', { next: { revalidate: 3600 } })
       .then(response => {
         return response.json()
       })
@@ -25,7 +25,7 @@ const JobApplied = async () => {
                 <Image
                     width={50}
                     height={49}
-                    src={"https://hi-test.kz//media/" + item.fields.image}
+                    src={"https://hi-test.kz/media/" + item.fields.image}
                     alt="item brand"
                 />
               </span>

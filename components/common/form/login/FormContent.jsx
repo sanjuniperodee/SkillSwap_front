@@ -14,7 +14,7 @@ const FormContent = () => {
   const handleLogin = async(e) => {
     e.preventDefault()
     let flag = false
-    fetch('https://hi-test.kz//api/login', {
+    fetch('https://hi-test.kz/api/login', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',

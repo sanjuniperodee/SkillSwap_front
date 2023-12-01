@@ -18,7 +18,7 @@ import DefaulHeader2 from "@/components/header/DefaulHeader2";
 
 async function getJob(id){
   let response = []
-  await fetch('https://hi-test.kz//api/job/' + id, { next: { revalidate: 0 } })
+  await fetch('https://hi-test.kz/api/job/' + id, { next: { revalidate: 0 } })
       .then(response => {
         return response.json()
       })
@@ -62,7 +62,7 @@ const JobSingleDynamicV1 = async ({params}) => {
                     <Image
                         width={100}
                         height={98}
-                        src={"https://hi-test.kz//media/" + job.fields.image}
+                        src={"https://hi-test.kz/media/" + job.fields.image}
                         alt="logo"
                     />
                   </span>
@@ -212,7 +212,7 @@ const JobSingleDynamicV1 = async ({params}) => {
                             <Image
                                 width={54}
                                 height={53}
-                                src={"https://hi-test.kz//media/" + job.fields.image}
+                                src={"https://hi-test.kz/media/" + job.fields.image}
                                 alt="resource"
                             />
                           </div>

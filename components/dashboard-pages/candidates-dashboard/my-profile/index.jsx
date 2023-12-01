@@ -12,7 +12,7 @@ import MenuToggler from "../../MenuToggler";
 
 async function getUser(){
     let response = -1
-    await fetch('https://hi-test.kz//api/user', { next: { revalidate: 0 },
+    await fetch('https://hi-test.kz/api/user', { next: { revalidate: 0 },
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
