@@ -8,7 +8,7 @@ const JobListingsTable = () => {
 
   const [jobs, setJobs] = useState([])
   useEffect(() => {
-    fetch('http://185.146.1.93:81/api/user', { next: { revalidate: 0 },
+    fetch('https://hi-test.kz//api/user', { next: { revalidate: 0 },
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -20,7 +20,7 @@ const JobListingsTable = () => {
             return response.json()
         })
         .then(data => {
-           fetch('http://185.146.1.93:81/api/user_courses/' + data.id)
+           fetch('https://hi-test.kz//api/user_courses/' + data.id)
               .then(response => {
                 return response.json()
               })
@@ -74,7 +74,7 @@ const JobListingsTable = () => {
                               <img
                                   width={50}
                                   height={49}
-                                  src={"http://185.146.1.93:81/media/" + item.fields.image}
+                                  src={"https://hi-test.kz//media/" + item.fields.image}
                                   alt="logo"
                               />
                             </span>

@@ -20,7 +20,7 @@ import Link from "next/link";
 
 async function getJobs(){
   let response = []
-  await fetch('http://185.146.1.93:81/api/jobs', { next: { revalidate: 0 } })
+  await fetch('https://hi-test.kz//api/jobs', { next: { revalidate: 0 } })
       .then(response => {
         return response.json()
       })
@@ -126,7 +126,7 @@ export default async function FilterJobsBox() {
         <div className="inner-box">
           <div className="content">
             <span className="company-logo">
-              <img width={50} height={50} src={"http://185.146.1.93:81//media/" + item.fields.image} alt="item brand" />
+              <img width={50} height={50} src={"https://hi-test.kz///media/" + item.fields.image} alt="item brand" />
             </span>
             <h4>
               <Link href={`/job-single-v1/${item.pk}`}>{item.fields.title}</Link>

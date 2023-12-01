@@ -13,11 +13,12 @@ import SocialTwo from "@/components/job-single-pages/social/SocialTwo";
 import JobDetailsDescriptions from "@/components/job-single-pages/shared-components/JobDetailsDescriptions";
 import ApplyJobModalContent from "@/components/job-single-pages/shared-components/ApplyJobModalContent";
 import Image from "next/image";
+import DefaulHeader2 from "@/components/header/DefaulHeader2";
 
 
 async function getJob(id){
   let response = []
-  await fetch('http://185.146.1.93:81/api/job/' + id, { next: { revalidate: 0 } })
+  await fetch('https://hi-test.kz//api/job/' + id, { next: { revalidate: 0 } })
       .then(response => {
         return response.json()
       })
@@ -29,8 +30,8 @@ async function getJob(id){
 }
 
 export const metadata = {
-  title: "Jumys App",
-  // description: "Superio - Job Borad React NextJS Template",
+  title: "Skill Swap",
+  description: "Делись своими знаниями и обретай новые",
 };
 
 const JobSingleDynamicV1 = async ({params}) => {
@@ -41,13 +42,13 @@ const JobSingleDynamicV1 = async ({params}) => {
         {/* <!-- Header Span --> */}
         <span className="header-span"></span>
 
-        <LoginPopup/>
+        <LoginPopup />
         {/* End Login Popup Modal */}
 
-        <DefaulHeader/>
-        {/* <!--End Main Header --> */}
+        <DefaulHeader2 />
+        {/* End Header with upload cv btn */}
 
-        <MobileMenu/>
+        <MobileMenu />
         {/* End MobileMenu */}
 
         {/* <!-- Job Detail Section --> */}
@@ -61,7 +62,7 @@ const JobSingleDynamicV1 = async ({params}) => {
                     <Image
                         width={100}
                         height={98}
-                        src={"http://185.146.1.93:81/media/" + job.fields.image}
+                        src={"https://hi-test.kz//media/" + job.fields.image}
                         alt="logo"
                     />
                   </span>
@@ -211,7 +212,7 @@ const JobSingleDynamicV1 = async ({params}) => {
                             <Image
                                 width={54}
                                 height={53}
-                                src={"http://185.146.1.93:81/media/" + job.fields.image}
+                                src={"https://hi-test.kz//media/" + job.fields.image}
                                 alt="resource"
                             />
                           </div>

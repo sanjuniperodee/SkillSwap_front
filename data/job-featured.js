@@ -1,4 +1,4 @@
-fetch('http://185.146.1.93:81/api/jobs')
+fetch('https://hi-test.kz//api/jobs')
     .then(response => {
         return response.json()
     })

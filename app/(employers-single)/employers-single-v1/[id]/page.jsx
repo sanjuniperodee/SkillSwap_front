@@ -12,9 +12,8 @@ import PrivateMessageBox from "@/components/employer-single-pages/shared-compone
 import Image from "next/image";
 
 export const metadata = {
-  title:
-    "Employers Single Dyanmic V1 || Superio - Job Borad React NextJS Template",
-  description: "Superio - Job Borad React NextJS Template",
+  title: "Skill Swap",
+  description: "Делись своими знаниями и обретай новые",
 };
 
 const EmployersSingleV1 = ({ params }) => {
